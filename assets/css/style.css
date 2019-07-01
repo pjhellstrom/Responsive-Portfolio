@@ -54,10 +54,6 @@ Main container
     text-align: center;
 }
 
-.introrow1, .introrow2, .jonascol1, .jonascol2 {
-    border: 2px solid yellowgreen;
-}
-
 #imgblurb {
     font-family: 'Abel', sans-serif;
 }
@@ -96,16 +92,29 @@ h1{
 
 #main-container {
     padding-top: 150px;
+    width: 95vw;
 }
 
 .main-section {
     float: left;
-    width: 100%;
-    max-width: 650px;
     padding: 30px;
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
+}
+
+.jonascol1 {
+    float: left;
+    padding-right: 15px;
+}
+
+.introrow1 {
+    float:left;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 70vw;
 }
 
 #contact-form ul {
@@ -154,8 +163,6 @@ textarea {
 .introlist li:first-child {
     border-left: 0 none;
 }
-
-
 
 .introlist{
     margin-top: 10px;
@@ -214,19 +221,26 @@ Portfolio
 
 @media screen and (max-width: 980px) {
 
-    .menuwrapper {
-        
+    #main-container {
+        float:left;
+        width: 75vw;
+        padding-left: 40px;
     }
 
-    .mainwrapper {
-        width: 500px;
+    form {
+        width: 75vw;
     }
-
-}
-
+    
 @media screen and (max-width: 768px) {
-    .mainwrapper {
-        width: 100%;
+
+    #main-container {
+        width: 95vw;
+    }
+
+    #jonasimg img {
+        width: 30vw;
+        padding: 10px;
+        align-items: center;
     }
 }
 
@@ -243,15 +257,14 @@ Portfolio
     }
 
     #jonasimg img {
-        border: 2px solid yellowgreen;
-        width: 500px;
-        max-width: 600px;
+        width: 85vw;
         padding: 10px;
         align-items: center;
     }
 
     #main-container {
-        width: 100%;
+        width: 95vw;
+        
     }
 
     #main-container h1 {
@@ -262,7 +275,7 @@ Portfolio
         position: static;
     }
 
-    .introrow1, .introrow2, .introrow2 li{
+        .introrow1, .introrow2, .introrow2 li{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -288,5 +301,4 @@ Portfolio
     footer {
         font-size: 20pt;
     }
-
 }
