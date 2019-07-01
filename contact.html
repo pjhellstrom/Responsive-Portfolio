@@ -4,62 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jonas Hellstrom</title>
+    <title>Jonas Hellstrom | Contact</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=DM Serif Text|Abel|Playfair+Display:400,700|Roboto:100,300,400' rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
 
-
-        
-        <div class="menuwrapper">
-            <h1 id="jonastitle">Jonas Hellstrom — full-stack developer in training</h1>
-
-            <a class="home-button"></a>
-
-            <nav class="menubar">
-                <ul>
-                    <li id="menuitem">
-                        <a href="index.html">About</a>
-                    </li>
-                    <li id="menuitem">
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li id="menuitemselected">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header id="mainheader">
+        <div class="container">
+            <a href="./index.html" id="maintitle">Jonas Hellstrom</a>
+            <nav>
+                <a href="./index.html">About</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html" id="menuitemselected">Contact</a>
             </nav>
-
         </div>
+    </header>
 
-        <div class="mainwrapper">
-
-                <div class="introwrapper">
-
-                    <form class="contactform">
-                        Name:<br>
-                        <input type="text" name="name" placeholder="First name, last name"><br>
-                        Email:<br>
-                        <input type="text" name="email" placeholder="name@email.com"><br>
-                        Message:<br>
-                        <input type="text" name="message" placeholder="Hey Jonas!">
-                        <br><br>
-                    </form>
-
-                    <button type="button" id="submitbutton">Submit now</button>
-                    <br>
-                </div>
-        </div>
-
-
-        <div class="footerwrapper">
-            <footer>&copy; Jonas Hellstrom 2019</footer>
-        </div>
-
-
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
+            <hr>
+    
+            <form id="contact-form">
+            <ul>
+                <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name here" required="required">
+                </li>
+                <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@email.com" required="required">
+                </li>
+                <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+                </li>
+            </ul>
+            <input type="submit">
+            </form>
+    
+        </section>
+        
     </div>
 
+        <footer>
+            <div class="container">
+                &copy; Jonas Hellstrom 2019
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

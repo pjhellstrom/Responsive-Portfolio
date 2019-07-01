@@ -14,6 +14,11 @@ body
     font-family: 'DM Serif Text';
     color:#333;
     background-image: url(/assets/images/bgpattern.png);
+    display: block;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*
@@ -38,7 +43,7 @@ Main container
     box-shadow: 10px 10px 15px rgba(117, 117, 117, 0.685)
 }
 
-#maintitle{
+#maintitle {
     float: left;
     width: 200px;
     height: 90px;
@@ -47,6 +52,14 @@ Main container
     font-size: 23pt;
     line-height: 90px;
     text-align: center;
+}
+
+.introrow1, .introrow2, .jonascol1, .jonascol2 {
+    border: 2px solid yellowgreen;
+}
+
+#imgblurb {
+    font-family: 'Abel', sans-serif;
 }
 
 nav {
@@ -95,63 +108,49 @@ h1{
     border: 1px solid #ddd;
 }
 
-#introimg{
-    width: 960px;
-    height: 200px;
-    overflow: hidden;
+#contact-form ul {
+    margin-bottom: 20px;
 }
 
-#introimg img{
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: block;
+#contact-form li {
+    margin-bottom: 10px;
+    list-style: none;
 }
 
-
-/* old columns
-
-.portfoliocol1{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    line-height: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    font-size: 14pt;
-    width:450px;
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
 }
 
-
-.portfoliocol2{
-    display:flex;
-    flex-direction: column;
-    line-height: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    font-family: 'Abel', sans-serif;
-    font-size: 12pt;
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
 }
-*/
+
+textarea {
+  height: 200px;
+}
 
 /*Lists
 */
 
-ul
-{
-    display: flex;
-    justify-content: flex-start;
-}
-
-li
+.introlist li
 {
     list-style: none;
+    float: left;
     margin-left: 10px;
     font-family: 'Abel', sans-serif;
     font-size: 12pt;
 }
 
-a{
+.introlist a{
     text-decoration: none;
     font-family: 'DM Serif Text';
     color:#000;
@@ -211,24 +210,6 @@ Portfolio
     background: rgb(36, 92, 138);
 }
 
-/*
-Contact form
-*/
-
-.contactform
-{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-}
-
-#submitbutton
-{
-    display: flex;
-    width: 60px;
-    height: 40px;
-}
-
 /* media queries*/
 
 @media screen and (max-width: 980px) {
@@ -250,8 +231,22 @@ Contact form
 }
 
 @media screen and (max-width: 640px) {
+    
+    #maintitle {
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+    }
+
+    .introrow1 {
+        width: 100%;
+    }
+
     .mainwrapper {
-        width: 640px;
+        width: 100%;
     }
     .menuwrapper {
         position: static;
